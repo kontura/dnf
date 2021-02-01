@@ -325,6 +325,15 @@ configuration file by your distribution to override the DNF defaults.
     disable automatic metadata synchronizing. The default corresponds to three
     hours. The value is rounded to the next commenced hour.
 
+.. _module_obsoletes-label:
+
+``module_obsoletes``
+    :ref:`boolean <boolean-label>`
+
+    This option controls whether dnf should apply modular obsoletes. If enabled dnf
+    checks on each transaction if there are any active modular obsoletes and if
+    possible it tries to apply them in the transaction.
+
 .. _module_platform_id-label:
 
 ``module_platform_id``
@@ -332,6 +341,13 @@ configuration file by your distribution to override the DNF defaults.
 
     Set this to $name:$stream to override PLATFORM_ID detected from ``/etc/os-release``.
     It is necessary to perform a system upgrade and switch to a new platform.
+
+.. _module_stream_switch-label:
+
+``module_stream_switch``
+    :ref:`boolean <boolean-label>`
+
+    This option controls whether its possible to switch enabled streams of a module.
 
 ``multilib_policy``
     :ref:`string <string-label>`
