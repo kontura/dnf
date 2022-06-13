@@ -148,7 +148,7 @@ class Base(object):
         except hawkey.Exception as e:
             logger.debug(_("loading repo '{}' failure: {}").format(repo.id, e))
             raise dnf.exceptions.RepoError(
-                _("Loading repository '{}' has failed").format(repo.id))
+                _("Loading super duper tests repository '{}' has failed").format(repo.id))
 
     @staticmethod
     def _setup_default_conf():
