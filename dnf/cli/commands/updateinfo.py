@@ -34,7 +34,7 @@ from dnf.pycomp import unicode
 
 
 def _maxlen(iterable):
-    """Return maximum length of items in a non-empty iterable."""
+    """Return maximum length of items in a non-empty iterable. ASDAS"""
     return max(exact_width(item) for item in iterable)
 
 
