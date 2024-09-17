@@ -1547,6 +1547,7 @@ class Base(object):
             updates = self._merge_update_filters(updates, upgrade=True)
             # reduce a query to remove src RPMs
             updates.filterm(arch__neq=['src', 'nosrc'])
+
             # reduce a query to latest packages
             updates = updates.latest().run()
 
